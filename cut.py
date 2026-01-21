@@ -8,7 +8,7 @@ reader = PdfReader(input_path)
 writer = PdfWriter()
 
 # Copy every page except the last one
-for page in reader.pages[:6]:
+for page in reader.pages[3:3]:
     writer.add_page(page)
 
 with open(output_path, "wb") as f:
